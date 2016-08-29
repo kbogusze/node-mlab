@@ -14,6 +14,7 @@ app.use(bodyParser.json());
 //routes:
 app.use('/api',require('./routes/api'));
 
+var port = process.env.PORT || 1000; 
 //start server:
-app.listen(1000);
-console.log('Server is running on port 1000');
+app.listen(port);
+console.log('Server is running on port' + port);
